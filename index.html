@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="hi-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 Best-Seller Hindi E-Books | Apni Zindagi Badlein</title>
+
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS: The Magic Behind the Design */
+
+        :root {
+            --bg-color: #121212; /* Premium Black */
+            --text-color: #ffffff;
+            --accent-color: #e53935; /* Bold Red */
+            --accent-hover-color: #c62828;
+            --card-bg-color: #1e1e1e;
+            --border-color: #333333;
+            --font-heading: 'Oswald', sans-serif;
+            --font-body: 'Lato', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #b0b0b0;
+            max-width: 600px;
+            margin: 0 auto 60px auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .hero h1 .highlight {
+            color: var(--accent-color);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin-bottom: 40px;
+            color: #e0e0e0;
+        }
+        
+        /* The All-Important CTA Button */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(229, 57, 53, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        .cta-button:hover {
+            background-color: var(--accent-hover-color);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(229, 57, 53, 0.4);
+            animation: none;
+        }
+        
+        /* Problem/Hook Section */
+        .problem-list {
+            list-style: none;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .problem-list li {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: var(--card-bg-color);
+            border-left: 4px solid var(--accent-color);
+            border-radius: 4px;
+        }
+        
+        /* What's Inside Section */
+        .bundle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .book-card {
+            background-color: var(--card-bg-color);
+            padding: 30px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .book-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        .book-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+        }
+        .book-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .book-card p {
+            font-size: 0.95rem;
+            color: #b0b0b0;
+        }
+
+        /* How it works Section */
+        .steps-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            text-align: center;
+        }
+        .step {
+            flex: 1;
+        }
+        .step .step-number {
+            width: 60px;
+            height: 60px;
+            background-color: var(--bg-color);
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px auto;
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+        }
+        .step h3 {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+        }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 2rem;
+            color: var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            padding-top: 0;
+            color: #b0b0b0;
+        }
+        .faq-item.active .faq-answer {
+            padding-top: 15px;
+        }
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background: #000;
+        }
+
+        /* Animations & Responsive */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .show { opacity: 1; transform: translateY(0); }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3rem; }
+            .hero p { font-size: 1.1rem; }
+            .section-title { font-size: 2.2rem; }
+            .steps-container { flex-direction: column; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <!-- ========= HERO SECTION ========= -->
+        <section class="hero hidden">
+            <div class="container">
+                <h1>Apni <span class="highlight">Soch</span> Aur <span class="highlight">Zindagi</span> Badlein</h1>
+                <p>9 Best-Seller Hindi E-Books ka woh powerful collection jo aapko success, wealth aur aatmic shanti ki raah dikhayega. Abhi padhna shuru karein, seedhe apne mobile par!</p>
+                <a href="https://superprofile.bio/vp/9-best-seller-hindi-e-books--pdf-format-" class="cta-button">
+                    Abhi Kharidein Sirf ₹299 Mein
+                </a>
+            </div>
+        </section>
+
+        <!-- ========= HOOK/PROBLEM SECTION ========= -->
+        <section id="problem" class="hidden">
+            <div class="container">
+                <h2 class="section-title">Kya Aap Bhi Aisa Mehsoos Karte Hain?</h2>
+                <p class="section-subtitle">Agar aapka jawab 'Haan' hai, to aap sahi jagah par hain. Yeh E-Books aapke liye hi hain.</p>
+                <ul class="problem-list">
+                    <li>Khali samay mobile par bekar chala jaata hai?</li>
+                    <li>Life mein aage badhne ka raasta samajh nahi aa raha?</li>
+                    <li>Paise, success aur khushi ko lekar confusion hai?</li>
+                    <li>Motivational videos ka asar thodi der hi rehta hai?</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ========= SOLUTION / WHAT'S INSIDE SECTION ========= -->
+        <section id="bundle-details" class="hidden">
+            <div class="container">
+                <h2 class="section-title">Pesh Hai - The Ultimate E-Book Bundle</h2>
+                <p class="section-subtitle">Gyan ka woh khazana jo aapki har samasya ka samadhan dega. Is bundle mein aapko milega:</p>
+                <div class="bundle-grid">
+                    <div class="book-card hidden">
+                        <div class="icon">💰</div>
+                        <h3>Financial Freedom</h3>
+                        <p>Paise ko manage karna, invest karna aur wealth create karne ke timeless principles.</p>
+                    </div>
+                    <div class="book-card hidden">
+                        <div class="icon">🚀</div>
+                        <h3>Success Mindset</h3>
+                        <p>Apni soch ko success ke liye program karein aur bade goals achieve karein.</p>
+                    </div>
+                    <div class="book-card hidden">
+                        <div class="icon">🧘‍♂️</div>
+                        <h3>Power of Habits</h3>
+                        <p>Chhoti-chhoti aadaton se apni zindagi mein kaise bade badlaav laayein.</p>
+                    </div>
+                    <div class="book-card hidden">
+                        <div class="icon">🤝</div>
+                        <h3>Communication Skills</h3>
+                        <p>Logon ko prabhavit karna aur behtar rishte banane ki kala seekhein.</p>
+                    </div>
+                    <div class="book-card hidden">
+                        <div class="icon">🧠</div>
+                        <h3>Mind Control</h3>
+                        <p>Apne mann aur emotions par kabu paakar hamesha positive aur focused rahein.</p>
+                    </div>
+                    <div class="book-card hidden">
+                        <div class="icon">✨</div>
+                        <h3>Spiritual Growth</h3>
+                        <p>Aatmic shanti aur zindagi ka gehra matlab samjhein.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ========= HOW IT WORKS SECTION ========= -->
+        <section id="how-it-works" class="hidden">
+            <div class="container">
+                <h2 class="section-title">3 Aasan Steps Mein Shuru Karein</h2>
+                <p class="section-subtitle">Gyan paana ab bahut aasan hai. Bas in 3 steps ko follow karein.</p>
+                <div class="steps-container">
+                    <div class="step hidden">
+                        <div class="step-number">1</div>
+                        <h3>Click Karein</h3>
+                        <p>Neeche diye gaye button par click karke payment page par jaayein.</p>
+                    </div>
+                    <div class="step hidden">
+                        <div class="step-number">2</div>
+                        <h3>Payment Karein</h3>
+                        <p>Secure payment gateway se apni payment complete karein.</p>
+                    </div>
+                    <div class="step hidden">
+                        <div class="step-number">3</div>
+                        <h3>Download Karein</h3>
+                        <p>Payment ke turant baad E-Books ki PDF file download karein aur padhna shuru karein!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========= FAQ SECTION ========= -->
+        <section id="faq" class="hidden">
+            <div class="container">
+                <h2 class="section-title">Aapke Sawal, Hamare Jawab</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">Yeh E-Books kis format mein milengi?</div>
+                        <div class="faq-answer">
+                            <p>Sabhi 9 E-Books aapko ek high-quality, mobile-friendly PDF file mein milengi, jise aap kisi bhi phone, tablet ya computer par aaram se padh sakte hain.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Payment ke baad E-Books kaise milengi?</div>
+                        <div class="faq-answer">
+                            <p>Jaise hi aapki payment safal hogi, aapko turant screen par PDF download karne ka option mil jayega. Aapko email par bhi download link bhej diya jayega.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Kya payment karna safe hai?</div>
+                        <div class="faq-answer">
+                            <p>Bilkul! Hum India ke sabse trusted payment gateway ka istemaal karte hain jo 100% secure hai. Aapki details poori tarah surakshit hain.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Agar mujhe E-Books download karne mein dikkat aaye to?</div>
+                        <div class="faq-answer">
+                            <p>Aap payment ke baad milne wale confirmation email par reply kar sakte hain. Humari team 24 ghante ke andar aapki poori sahayata karegi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= FINAL CTA SECTION ========= -->
+        <section id="final-cta" class="hidden">
+            <div class="container" style="text-align: center;">
+                <h2 class="section-title">Ab Sochne Ka Waqt Khatam Hua</h2>
+                <p class="section-subtitle">Ek chhota sa investment aapki zindagi badal sakta hai. Woh gyan paayein jo aapko school-college mein kabhi nahi sikhaya gaya. Action lein aur aaj hi apni growth journey shuru karein!</p>
+                <a href="https://superprofile.bio/vp/9-best-seller-hindi-e-books--pdf-format-" class="cta-button">
+                    Haan! Main Apni Zindagi Badalne Ke Liye Taiyaar Hoon
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 E-Book Hub. Sabhi adhikar surakshit hain.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for FAQ Accordion and Scroll Animations
+
+        // 1. FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all other open FAQs
+                    faqItems.forEach(i => {
+                        i.classList.remove('active');
+                        i.querySelector('.faq-answer').style.maxHeight = null;
+                    });
+                    
+                    // If it wasn't already active, open it
+                    if (!isActive) {
+                        item.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    }
+                });
+            });
+
+            // 2. Scroll Animation Logic
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            }, {
+                threshold: 0.15 // Trigger when 15% of the element is visible
+            });
+
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+</html>
