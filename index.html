@@ -1,469 +1,421 @@
 <!DOCTYPE html>
-<html lang="hi-en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>9 Best-Seller Hindi E-Books | Apni Zindagi Badlein</title>
-
-    <!-- Google Fonts for premium typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-
+    <title>650+ से ज़्यादा सेल्फ़-हेल्प ई-बुक्स - सिर्फ़ ₹99 में!</title>
     <style>
-        /* CSS: The Magic Behind the Design */
-
+        /* CSS Styles */
         :root {
-            --bg-color: #121212; /* Premium Black */
-            --text-color: #ffffff;
-            --accent-color: #e53935; /* Bold Red */
-            --accent-hover-color: #c62828;
-            --card-bg-color: #1e1e1e;
-            --border-color: #333333;
-            --font-heading: 'Oswald', sans-serif;
-            --font-body: 'Lato', sans-serif;
+            --primary-color: #ff6347; /* Tomato */
+            --secondary-color: #4CAF50; /* Green */
+            --dark-color: #2c3e50; /* Dark Blue */
+            --light-color: #ecf0f1; /* Light Gray */
+            --white-color: #ffffff;
+            --font-family: 'Poppins', sans-serif;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
         body {
-            font-family: var(--font-body);
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.7;
-            font-size: 16px;
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
         }
 
         .container {
             max-width: 960px;
-            margin: 0 auto;
+            margin: auto;
+            overflow: hidden;
             padding: 0 20px;
         }
 
-        section {
-            padding: 80px 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        section:last-of-type {
-            border-bottom: none;
-        }
-
-        .section-title {
-            font-family: var(--font-heading);
-            font-size: 3rem;
+        header {
+            background: var(--dark-color);
+            color: var(--white-color);
+            padding: 1rem 0;
             text-align: center;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-        }
-        
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.1rem;
-            color: #b0b0b0;
-            max-width: 600px;
-            margin: 0 auto 60px auto;
+            border-bottom: 5px solid var(--primary-color);
         }
 
-        /* Hero Section */
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header .sub-headline {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
         .hero {
-            min-height: 90vh;
-            display: flex;
-            align-items: center;
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url(' C:\Users\Satyam\Downloads\Ebook\Ebook hindi me.png') no-repeat center center/cover;
+            color: var(--white-color);
             text-align: center;
-            flex-direction: column;
-            justify-content: center;
+            padding: 80px 20px;
         }
 
-        .hero h1 {
-            font-family: var(--font-heading);
-            font-size: 4.5rem;
-            line-height: 1.1;
+        .hero h2 {
+            font-size: 3rem;
             margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
         }
         
-        .hero h1 .highlight {
-            color: var(--accent-color);
+        .hero h2 .highlight {
+            color: var(--primary-color);
         }
 
         .hero p {
-            font-size: 1.25rem;
-            max-width: 600px;
-            margin-bottom: 40px;
-            color: #e0e0e0;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
         }
         
-        /* The All-Important CTA Button */
         .cta-button {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: var(--text-color);
-            padding: 18px 40px;
+            background-color: var(--secondary-color);
+            color: var(--white-color);
+            padding: 15px 35px;
+            text-decoration: none;
             font-size: 1.2rem;
             font-weight: 700;
-            font-family: var(--font-heading);
-            text-decoration: none;
-            border-radius: 5px;
+            border-radius: 50px;
             transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 5px 15px rgba(229, 57, 53, 0.3);
-            animation: pulse 2s infinite;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            animation: pulse 1.5s infinite;
         }
 
         .cta-button:hover {
-            background-color: var(--accent-hover-color);
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(229, 57, 53, 0.4);
-            animation: none;
-        }
-        
-        /* Problem/Hook Section */
-        .problem-list {
-            list-style: none;
-            max-width: 500px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .problem-list li {
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-            padding: 10px;
-            background: var(--card-bg-color);
-            border-left: 4px solid var(--accent-color);
-            border-radius: 4px;
-        }
-        
-        /* What's Inside Section */
-        .bundle-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-        .book-card {
-            background-color: var(--card-bg-color);
-            padding: 30px;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .book-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        }
-        .book-card .icon {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            color: var(--accent-color);
-        }
-        .book-card h3 {
-            font-family: var(--font-heading);
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-        .book-card p {
-            font-size: 0.95rem;
-            color: #b0b0b0;
+            background-color: #45a049;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
 
-        /* How it works Section */
-        .steps-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 30px;
-            text-align: center;
-        }
-        .step {
-            flex: 1;
-        }
-        .step .step-number {
-            width: 60px;
-            height: 60px;
-            background-color: var(--bg-color);
-            border: 2px solid var(--accent-color);
-            color: var(--accent-color);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto 20px auto;
-            font-family: var(--font-heading);
-            font-size: 1.8rem;
-        }
-        .step h3 {
-            font-family: var(--font-heading);
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-        }
-
-        /* FAQ Section */
-        .faq-container {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        .faq-item {
-            border-bottom: 1px solid var(--border-color);
-            padding: 20px 0;
-        }
-        .faq-question {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            font-size: 1.2rem;
-            font-weight: 700;
-        }
-        .faq-question::after {
-            content: '+';
-            font-size: 2rem;
-            color: var(--accent-color);
-            transition: transform 0.3s ease;
-        }
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease;
-            padding-top: 0;
-            color: #b0b0b0;
-        }
-        .faq-item.active .faq-answer {
-            padding-top: 15px;
-        }
-        .faq-item.active .faq-question::after {
-            transform: rotate(45deg);
-        }
-        
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            background: #000;
-        }
-
-        /* Animations & Responsive */
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
 
-        .hidden {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        .show { opacity: 1; transform: translateY(0); }
-        
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 3rem; }
-            .hero p { font-size: 1.1rem; }
-            .section-title { font-size: 2.2rem; }
-            .steps-container { flex-direction: column; }
+        .offer-section {
+            background: var(--primary-color);
+            color: var(--white-color);
+            text-align: center;
+            padding: 20px;
         }
 
+        .offer-section h3 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        #countdown-timer {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 10px;
+            letter-spacing: 3px;
+        }
+
+        .books-showcase {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .books-showcase h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+        }
+
+        .book-cover {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .book-cover:hover {
+            transform: scale(1.05);
+        }
+
+        .fomo-section {
+            background: var(--white-color);
+            padding: 40px 20px;
+            text-align: center;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .fomo-section .stock-counter {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 20px;
+            border: 1px solid #ffeeba;
+        }
+        
+        .fomo-section h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        #stock-left {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .value-proposition {
+            background: var(--dark-color);
+            color: var(--light-color);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .value-proposition h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature-item {
+            flex-basis: 30%;
+            padding: 20px;
+            min-width: 280px;
+        }
+
+        .feature-item i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .final-cta {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-size: 2.2rem;
+        }
+        
+        .final-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background: var(--dark-color);
+            color: var(--white-color);
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: var(--white-color);
+            color: var(--dark-color);
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: none;
+            font-size: 0.9rem;
+            border-left: 5px solid var(--secondary-color);
+        }
+        
+        .notification .highlight {
+             font-weight: 700;
+             color: var(--primary-color);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .hero h2 { font-size: 2.5rem; }
+            .books-grid { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
+            .feature-item { flex-basis: 100%; margin-bottom: 20px; }
+            .notification {
+                width: calc(100% - 40px);
+                left: 10px;
+                bottom: 10px;
+                text-align: center;
+            }
+        }
     </style>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
-    <main>
+    <header>
+        <div class="container">
+            <h1>ज्ञान का खजाना अब आपकी मुट्ठी में!</h1>
+            <p class="sub-headline">सफलता की ओर अपना पहला कदम बढ़ाएं।</p>
+        </div>
+    </header>
 
-        <!-- ========= HERO SECTION ========= -->
-        <section class="hero hidden">
-            <div class="container">
-                <h1>Apni <span class="highlight">Soch</span> Aur <span class="highlight">Zindagi</span> Badlein</h1>
-                <p>9 Best-Seller Hindi E-Books ka woh powerful collection jo aapko success, wealth aur aatmic shanti ki raah dikhayega. Abhi padhna shuru karein, seedhe apne mobile par!</p>
-                <a href="https://superprofile.bio/vp/9-best-seller-hindi-e-books--pdf-format-" class="cta-button">
-                    Abhi Kharidein Sirf ₹299 Mein
-                </a>
+    <section class="hero">
+        <div class="container">
+            <h2><span class="highlight">एक पिज़्ज़ा से भी कम कीमत में</span> पाइए 650+ बेस्टसेलर ई-बुक्स का कलेक्शन!</h2>
+            <p>सफल लोगों के जीवन और किताबों से सीखें, गलतियों से बचें, सक्सेस के फॉर्मूले सीखें और लाइफ में आगे बढ़ें।</p>
+            <a href="https://superprofile.bio/vp/650-best-motivational--self-help---business-ebooks--lifetime-access-ke-sath" class="cta-button">हाँ, मुझे ये बंडल चाहिए!</a>
+        </div>
+    </section>
+
+    <section class="offer-section">
+        <div class="container">
+            <h3>🔥 लिमिटेड टाइम ऑफर - जल्दी करें! 🔥</h3>
+            <div id="countdown-timer">00:29:59</div>
+        </div>
+    </section>
+    
+    <section class="books-showcase">
+        <div class="container">
+            <h2>इस बंडल में आपको क्या मिलेगा?</h2>
+            <p>650 से भी ज़्यादा बेस्ट-सेलिंग सेल्फ़-हेल्प, बिज़नेस और मोटिवेशनल ई-बुक्स (सभी हिंदी में)</p>
+            <img src="https://github.com/digisatyam/ebook/blob/main/Ebook%20hindi%20me.png?raw=true" alt="Collection of Hindi Ebooks" style="max-width:100%; border-radius:10px; margin-top: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.15);">
+        </div>
+    </section>
+
+    <div class="fomo-section">
+        <div class="container">
+            <h3>मौका हाथ से न जाने दें! 😱</h3>
+            <p>1400 से ज़्यादा बुक लवर्स पहले ही इस ऑफर का फायदा उठा चुके हैं!</p>
+            <div class="stock-counter">
+                <p>इस स्पेशल कीमत पर सिर्फ <span id="stock-left">50</span> बंडल ही बचे हैं!</p>
             </div>
-        </section>
+        </div>
+    </div>
+    
+    <div class="container" style="text-align:center; margin: 40px auto;">
+         <a href="https://superprofile.bio/vp/650-best-motivational--self-help---business-ebooks--lifetime-access-ke-sath" class="cta-button">अभी ₹99 में खरीदें</a>
+    </div>
 
-        <!-- ========= HOOK/PROBLEM SECTION ========= -->
-        <section id="problem" class="hidden">
-            <div class="container">
-                <h2 class="section-title">Kya Aap Bhi Aisa Mehsoos Karte Hain?</h2>
-                <p class="section-subtitle">Agar aapka jawab 'Haan' hai, to aap sahi jagah par hain. Yeh E-Books aapke liye hi hain.</p>
-                <ul class="problem-list">
-                    <li>Khali samay mobile par bekar chala jaata hai?</li>
-                    <li>Life mein aage badhne ka raasta samajh nahi aa raha?</li>
-                    <li>Paise, success aur khushi ko lekar confusion hai?</li>
-                    <li>Motivational videos ka asar thodi der hi rehta hai?</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- ========= SOLUTION / WHAT'S INSIDE SECTION ========= -->
-        <section id="bundle-details" class="hidden">
-            <div class="container">
-                <h2 class="section-title">Pesh Hai - The Ultimate E-Book Bundle</h2>
-                <p class="section-subtitle">Gyan ka woh khazana jo aapki har samasya ka samadhan dega. Is bundle mein aapko milega:</p>
-                <div class="bundle-grid">
-                    <div class="book-card hidden">
-                        <div class="icon">💰</div>
-                        <h3>Financial Freedom</h3>
-                        <p>Paise ko manage karna, invest karna aur wealth create karne ke timeless principles.</p>
-                    </div>
-                    <div class="book-card hidden">
-                        <div class="icon">🚀</div>
-                        <h3>Success Mindset</h3>
-                        <p>Apni soch ko success ke liye program karein aur bade goals achieve karein.</p>
-                    </div>
-                    <div class="book-card hidden">
-                        <div class="icon">🧘‍♂️</div>
-                        <h3>Power of Habits</h3>
-                        <p>Chhoti-chhoti aadaton se apni zindagi mein kaise bade badlaav laayein.</p>
-                    </div>
-                    <div class="book-card hidden">
-                        <div class="icon">🤝</div>
-                        <h3>Communication Skills</h3>
-                        <p>Logon ko prabhavit karna aur behtar rishte banane ki kala seekhein.</p>
-                    </div>
-                    <div class="book-card hidden">
-                        <div class="icon">🧠</div>
-                        <h3>Mind Control</h3>
-                        <p>Apne mann aur emotions par kabu paakar hamesha positive aur focused rahein.</p>
-                    </div>
-                    <div class="book-card hidden">
-                        <div class="icon">✨</div>
-                        <h3>Spiritual Growth</h3>
-                        <p>Aatmic shanti aur zindagi ka gehra matlab samjhein.</p>
-                    </div>
+    <section class="value-proposition">
+        <div class="container">
+            <h2>क्यों यह बंडल आपके लिए बेस्ट है?</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <i class="fas fa-rocket"></i>
+                    <h3>ज़िंदगी में आगे बढ़ें</h3>
+                    <p>दूसरों की गलतियों से सीखकर और सही ज्ञान अपनाकर अपनी ज़िंदगी को एक नई दिशा दें।</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>ज्ञान का भंडार</h3>
+                    <p>पर्सनालिटी डेवलपमेंट, बिज़नेस, वेल्थ क्रिएशन जैसे कई विषयों पर दुनिया की बेस्ट किताबों का ज्ञान पाएं।</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-rupee-sign"></i>
+                    <h3>पैसे की बचत</h3>
+                    <p>एक किताब की कीमत में 650 से भी ज़्यादा किताबों का कलेक्शन पाएं और हज़ारों रुपये बचाएं।</p>
                 </div>
             </div>
-        </section>
-        
-        <!-- ========= HOW IT WORKS SECTION ========= -->
-        <section id="how-it-works" class="hidden">
-            <div class="container">
-                <h2 class="section-title">3 Aasan Steps Mein Shuru Karein</h2>
-                <p class="section-subtitle">Gyan paana ab bahut aasan hai. Bas in 3 steps ko follow karein.</p>
-                <div class="steps-container">
-                    <div class="step hidden">
-                        <div class="step-number">1</div>
-                        <h3>Click Karein</h3>
-                        <p>Neeche diye gaye button par click karke payment page par jaayein.</p>
-                    </div>
-                    <div class="step hidden">
-                        <div class="step-number">2</div>
-                        <h3>Payment Karein</h3>
-                        <p>Secure payment gateway se apni payment complete karein.</p>
-                    </div>
-                    <div class="step hidden">
-                        <div class="step-number">3</div>
-                        <h3>Download Karein</h3>
-                        <p>Payment ke turant baad E-Books ki PDF file download karein aur padhna shuru karein!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-
-        <!-- ========= FAQ SECTION ========= -->
-        <section id="faq" class="hidden">
-            <div class="container">
-                <h2 class="section-title">Aapke Sawal, Hamare Jawab</h2>
-                <div class="faq-container">
-                    <div class="faq-item">
-                        <div class="faq-question">Yeh E-Books kis format mein milengi?</div>
-                        <div class="faq-answer">
-                            <p>Sabhi 9 E-Books aapko ek high-quality, mobile-friendly PDF file mein milengi, jise aap kisi bhi phone, tablet ya computer par aaram se padh sakte hain.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">Payment ke baad E-Books kaise milengi?</div>
-                        <div class="faq-answer">
-                            <p>Jaise hi aapki payment safal hogi, aapko turant screen par PDF download karne ka option mil jayega. Aapko email par bhi download link bhej diya jayega.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">Kya payment karna safe hai?</div>
-                        <div class="faq-answer">
-                            <p>Bilkul! Hum India ke sabse trusted payment gateway ka istemaal karte hain jo 100% secure hai. Aapki details poori tarah surakshit hain.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">Agar mujhe E-Books download karne mein dikkat aaye to?</div>
-                        <div class="faq-answer">
-                            <p>Aap payment ke baad milne wale confirmation email par reply kar sakte hain. Humari team 24 ghante ke andar aapki poori sahayata karegi.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========= FINAL CTA SECTION ========= -->
-        <section id="final-cta" class="hidden">
-            <div class="container" style="text-align: center;">
-                <h2 class="section-title">Ab Sochne Ka Waqt Khatam Hua</h2>
-                <p class="section-subtitle">Ek chhota sa investment aapki zindagi badal sakta hai. Woh gyan paayein jo aapko school-college mein kabhi nahi sikhaya gaya. Action lein aur aaj hi apni growth journey shuru karein!</p>
-                <a href="https://superprofile.bio/vp/9-best-seller-hindi-e-books--pdf-format-" class="cta-button">
-                    Haan! Main Apni Zindagi Badalne Ke Liye Taiyaar Hoon
-                </a>
-            </div>
-        </section>
-
-    </main>
+    <section class="final-cta">
+        <div class="container">
+            <h2>अब सोचने में और समय बर्बाद न करें!</h2>
+            <p>यह आपकी ज़िंदगी बदलने वाला निवेश हो सकता है। सिर्फ ₹99 में अपनी पर्सनल ग्रोथ की यात्रा शुरू करें।</p>
+            <a href="https://superprofile.bio/vp/650-best-motivational--self-help---business-ebooks--lifetime-access-ke-sath" class="cta-button">ग्रैब करें 650+ ई-बुक्स सिर्फ ₹99 में!</a>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 E-Book Hub. Sabhi adhikar surakshit hain.</p>
+            <p>&copy; 2025 Book Lovers Paradise. All Rights Reserved.</p>
         </div>
     </footer>
+    
+    <div id="purchase-notification" class="notification">
+       <span id="notification-text"></span>
+    </div>
 
     <script>
-        // JavaScript for FAQ Accordion and Scroll Animations
+        // JavaScript Logic
 
-        // 1. FAQ Accordion Logic
-        document.addEventListener('DOMContentLoaded', function() {
-            const faqItems = document.querySelectorAll('.faq-item');
+        // --- COUNTDOWN TIMER ---
+        let duration = 30 * 60; // 30 minutes in seconds
+        const timerDisplay = document.getElementById('countdown-timer');
 
-            faqItems.forEach(item => {
-                const question = item.querySelector('.faq-question');
-                const answer = item.querySelector('.faq-answer');
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
 
-                question.addEventListener('click', () => {
-                    const isActive = item.classList.contains('active');
-                    
-                    // Close all other open FAQs
-                    faqItems.forEach(i => {
-                        i.classList.remove('active');
-                        i.querySelector('.faq-answer').style.maxHeight = null;
-                    });
-                    
-                    // If it wasn't already active, open it
-                    if (!isActive) {
-                        item.classList.add('active');
-                        answer.style.maxHeight = answer.scrollHeight + "px";
-                    }
-                });
-            });
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
 
-            // 2. Scroll Animation Logic
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('show');
-                    }
-                });
-            }, {
-                threshold: 0.15 // Trigger when 15% of the element is visible
-            });
+                display.textContent = "00:" + minutes + ":" + seconds;
 
-            const hiddenElements = document.querySelectorAll('.hidden');
-            hiddenElements.forEach(el => observer.observe(el));
-        });
+                if (--timer < 0) {
+                    timer = duration; // Restart timer
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            startTimer(duration, timerDisplay);
+        };
+
+        // --- FOMO NOTIFICATIONS & STOCK COUNTER ---
+        const stockElement = document.getElementById('stock-left');
+        let stockCount = 50; // Initial stock
+        
+        const names = ["रोहन", "प्रिया", "अमित", "सुनीता", "विकास", "पूजा", "दीपक", "नेहा", "संदीप", "कविता"];
+        const cities = ["दिल्ली", "मुंबई", "पुणे", "बैंगलोर", "जयपुर", "पटना", "लखनऊ", "अहमदाबाद"];
+
+        function showNotification() {
+            if (stockCount <= 1) return; // Stop when stock is 1
+
+            const randomName = names[Math.floor(Math.random() * names.length)];
+            const randomCity = cities[Math.floor(Math.random() * cities.length)];
+            
+            const notification = document.getElementById('purchase-notification');
+            const notificationText = document.getElementById('notification-text');
+            
+            notificationText.innerHTML = `<span class="highlight">${randomName}</span> (${randomCity}) ने अभी-अभी ई-बुक बंडल खरीदा!`;
+            notification.style.display = 'block';
+
+            // Update stock count
+            stockCount--;
+            stockElement.textContent = stockCount;
+
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 5000); // Hide after 5 seconds
+        }
+
+        // Show a notification every few seconds
+        setInterval(showNotification, Math.random() * (12000 - 7000) + 7000); // Random interval between 7-12 seconds
+        
     </script>
 
 </body>
